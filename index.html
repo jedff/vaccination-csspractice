@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Juan Edgardo Figueroa">
+  <meta name="description" content="Get your Coronavirus (COVID-19) vaccination, schedule your vaccinations and find out why you should vaccine."> 
+  <title>Vaccination against COVID-19</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous"/>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="square_logo_nav"></div>
+      Vaccination
+    </div>
+    <nav>
+      <ul class="nav_menu">
+        <li><a href="#">Database</a></li>
+        <li><a href="#">Education</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Regulation</a></li>
+      </ul>
+      <a class="btn" href="#">Hoax Buster</a>
+    </nav>
+  </header>
+  <main class="wrapper"> 
+    <section>
+      <div class="triangle"></div>
+      <div class="triangle2"></div>
+      <div class="fight_container">
+        <div class="fight_container_text">
+          <h1>Fight Virus With Vaccines</h1>
+          <p>Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your familiy get infected</p>
+          <div class="features">
+            <p class="icontext">
+              <span class="section_icon si_fight">
+                <i class="fa-solid fa-shield fa-xs"></i>
+                <span class="cs_light"></span>
+              </span>
+              <span class="feature">Best protection</span>
+            </p>
+            <p class="icontext">
+              <span class="section_icon si_fight">
+                <i class="fa-solid fa-star fa-xs"></i>
+                <span class="cs_light"></span>
+              </span>
+              <span class="feature">Selected vaccines</span>
+            </p>
+          </div>
+          <div class="form_container">
+            <p class="icontext">
+              <span class="section_icon si_prep">
+                <i class=" fa-solid fa-clock fa-xs"></i>
+                <span class="circle_shadow"></span>
+              </span>
+              <span class="schedule">Schedule your vaccinations</span>
+            </p>
+            <form class="schedule_form" action="#">
+              <p>
+                <label class="loc icontext it_form" for="location">
+                  <span class="section_icon si_prep">
+                    <i class="fa-solid fa-location-dot fa-xs"></i>
+                  </span>
+                  <span>Location</span>
+                </label>
+                <input type="text" name="location" id="location">
+              </p>
+              <p>
+                <label class="loc icontext it_form" for="date">
+                  <span class="section_icon si_prep">
+                    <i class="fa-solid fa-calendar fa-xs"></i>
+                  </span>
+                  <span>Date</span>
+                </label>
+                <input type="date" name="date" id="date" min="2022-04-01" max="2022-04-30">
+              </p>
+              <p>
+                <label class="loc icontext it_form" for="type">
+                  <span class="section_icon si_prep">
+                    <i class="fa-solid fa-pen fa-xs"></i>
+                  </span>
+                  <span>Vaccine Type</span>
+                </label>
+                <select name="type" id="type">
+                  <option value="moderna">Moderna</option>
+                  <option value="astra">AstraZeneca</option>
+                  <option value="sino">Sino</option>
+                  <option value="pfizer">Pfizer</option>
+                </select>
+              </p>
+              <button id="shcedule_btn" class="btn" type="submit">Submit</button>
+            </form> 
+          </div>
+        </div>
+        <div class="fight_container_img">
+          <img src="/img/doctor.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="why_section">
+      <div class="why_section_img">
+        <img src="/img/brands.jpeg" alt="vaccine brands">
+      </div>
+      <div class="why_container">
+        <div class="why_container_text">
+          <h2>Why should I vaccine?</h2>
+          <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination:</p>
+        </div>
+        <div class="why_container_img">
+          <img src="/img/whyshould.jpeg" alt="">
+        </div>
+      </div>
+      <div class="benefits">
+        <div class="benefit_item">
+          <p class="icontext">
+            <span class="section_why_icon si_prep">
+              <i class="fa-solid fa-chart-bar fa-lg"></i>
+            </span>
+          </p> 
+          <h3>Minimize the spread of viruses</h3>
+          <p>Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+        </div>
+        <div class="benefit_item">
+          <p class="icontext">
+            <span class="section_why_icon si_prep">
+              <i class="fa-solid fa-shield-virus fa-lg"></i>
+            </span>
+          </p> 
+          <h3>Forming antibodies</h3>
+          <p>COVID-19 vaccine proven to help shape antibody response for immune system</p>
+        </div>
+        <div class="benefit_item">
+          <p class="icontext">
+            <span class="section_why_icon si_prep">
+              <i class="fa-solid fa-users fa-lg"></i>
+            </span>
+          </p> 
+          <h3>Protecting people nearby</h3>
+          <p>The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</p>
+        </div>
+        <div class="benefit_item">
+          <p class="icontext">
+            <span class="section_why_icon si_prep">
+              <i class="fa-solid fa-chart-line fa-lg"></i>
+            </span>
+          </p> 
+          <h3>Creating group immunity</h3>
+          <p>COVID-19 vaccination is also beneficial for creating group immunity or herd immunity</p>
+        </div>
+      </div>
+    </section>
+    <section class="prep_section">
+      <div class="prep_section_img">
+        <img src="/img/preparation.jpeg" alt="">
+      </div>
+      <div class="prep_section_text">
+        <h2>Preparations Before Vaccine</h2>
+        <p>The succes of vaccines is strongly influenced by the strenght of the body's immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccine work:</p>
+        <div class="prep_list">
+          <details class="prep_item">
+            <summary class="icontext"> 
+                <span class="section_icon si_prep">
+                  <i class=" fa-solid fa-clock fa-xs"></i>
+                </span>
+                Avoid alcoholic beverages
+            </summary>
+            <p>Stress has a profound effect on immune work. Moreoveer, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+          </details>
+          <details class="prep_item">
+            <summary class="icontext"> 
+              <span class="section_icon si_prep">
+                <i class=" fa-solid fa-clock fa-xs"></i>
+              </span>
+              Avoid stress
+          </summary>
+            <p>Stress has a profound effect on immune work. Moreoveer, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+          </details>
+          <details class="prep_item">
+            <summary class="icontext"> 
+              <span class="section_icon si_prep">
+                <i class=" fa-solid fa-clock fa-xs"></i>
+              </span>
+              Eat healty food
+          </summary>
+            <p>Stress has a profound effect on immune work. Moreoveer, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+          </details>
+          <details class="prep_item">
+            <summary class="icontext"> 
+              <span class="section_icon si_prep">
+                <i class=" fa-solid fa-clock fa-xs"></i>
+              </span>
+              Get enough sleep
+          </summary>
+            <p>Stress has a profound effect on immune work. Moreoveer, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+          </details>
+          <details class="prep_item">
+            <summary class="icontext"> 
+              <span class="section_icon si_prep">
+                <i class=" fa-solid fa-clock fa-xs"></i>
+              </span>
+              Exercise or physical activity
+          </summary>
+            <p>Stress has a profound effect on immune work. Moreoveer, prolonged stress can increase cortisol production and oxidative stress in the body.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="emer_section">
+      <div class="emer_section_text">
+        <h2>Emergency Contact</h2>
+        <p>Contact one of the contacts below if you our your family feel unwell and have similar symptoms such as COVID-19, make sure you also takecare of yourself before reporting to us:</p>
+        <div class="emer_list">
+          <div class="emer_item">
+            <div class="emer_item_div">
+              <div class="icontext">
+                <span class="section_why_icon si_prep">
+                  <i class="fa-solid fa-phone-volume fa-lg"></i>
+                  <span class="circle_shadow"></span>
+                </span>
+              </div>
+              <div class="emer_item_text">
+                <h3>Call</h3>
+                <p>021.155.177.15</p>
+              </div>
+            </div>
+            <a class="btn btn_emer" href="#">Call Now</a>
+          </div>
+          <div class="emer_item">
+            <div class="emer_item_div">
+              <div class="icontext">
+                <span class="section_why_icon si_prep">
+                  <i class="fa-solid fa-comment-dots fa-lg"></i>
+                  <span class="circle_shadow"></span>
+                </span>
+              </div>
+              <div class="emer_item_text">
+                <h3>Chat</h3>
+                <p>021.155.177.15</p>
+              </div>
+            </div>
+            <a class="btn btn_emer" href="#">Chat Now</a>
+          </div>
+          <div class="emer_item">
+            <div class="emer_item_div">
+              <div class="icontext">
+                <span class="section_why_icon si_prep">
+                  <i class="fa-solid fa-video fa-lg"></i>
+                  <span class="circle_shadow"></span>
+                </span>
+              </div>
+              <div class="emer_item_text">
+                <h3>Video Call</h3>
+                <p>021.155.177.15</p>
+              </div>
+            </div>
+            <a class="btn btn_emer" href="#">Video Call Now</a>
+          </div>
+          <div class="emer_item">
+            <div class="emer_item_div">
+              <div class="icontext">
+                <span class="section_why_icon si_prep">
+                  <i class="fa-solid fa-envelope fa-lg"></i>
+                  <span class="circle_shadow"></span>
+                </span>
+              </div>
+              <div class="emer_item_text">
+                <h3>Message</h3>
+                <p>021.155.177.15</p>
+              </div>
+            </div>
+            <a class="btn btn_emer" href="#">Message Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="emer_section_img">
+        <img src="/img/emergency.jpeg" alt="">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer_text">
+      <div class="logo">
+        <div class="square_logo_ft"></div>
+        Vaccination
+      </div>
+      <p>
+        Our goal is to help the world free from the ongoing pandemic
+      </p>
+    </div>
+    <div class="footer_links">
+      <div class="links_list">
+        <h3>About</h3>
+        <a href="#">About Us</a>
+        <a href="#">Features</a>
+        <a href="#">News & Blog</a>
+      </div>
+      <div class="links_list">
+        <h3>Company</h3>
+        <a href="#">How We Work?</a>
+        <a href="#">Capital</a>
+        <a href="#">Security</a>
+      </div>
+      <div class="links_list">
+        <h3>Support</h3>
+        <a href="#">FAQs</a>
+        <a href="#">Support Center</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer_copy">
+      <p>@2021 Vaccination. All rights reserved</p>
+      <a href="#">Terms & Agreements</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="triangle3"></div>
+  </footer>
+</body>
+</html>
