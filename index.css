@@ -833,6 +833,7 @@ option {
   }
   .nav_menu .btn {
     padding: 1rem;
+    color: var(--clr-btn);
   }
   .features {
     flex-flow: column;
@@ -840,6 +841,9 @@ option {
   .schedule_form {
     width: 300px;
   }
-  
+  .btn {
+    background-color: var(--bg-btn);
+    color: var(--clr-btn);
+  }
 }
 
