@@ -159,10 +159,15 @@ nav {
   list-style: none;
   display: flex;
   flex-flow: wrap;
+  align-items: center;
   gap: 2rem;
 }
 .nav_menu a {
   color: var(--clr-sec);
+  text-decoration: none;
+}
+.nav_menu .btn {
+  color: var(--bg-btn);
   text-decoration: none;
 }
 .btn {
@@ -186,6 +191,16 @@ nav {
   color: var(--clr-btn);
   box-shadow: var(--bs-btn)
 }
+.menu_icon {
+  color: var(--clr-pri);
+  display: none;
+  cursor: pointer;
+}
+#checkbox_menu {
+  display: none;
+}
+
+
 /*  ----------------------------------------------------  */
 .wrapper {
   display: flex;
@@ -195,7 +210,10 @@ nav {
   flex: 0 1 100%;
 }
 section {
+  position: relative;
+  max-width: 1600px;
   height: 900px;
+  margin: auto;
 }
 
 /* -------------------------------------------- FIGHT SECTION */
@@ -206,6 +224,7 @@ section {
   height: inherit;
 }
 .fight_container_img {
+  position: relative;
   flex: 0 1 48%;
   background: var(--bglg-img);
   display: flex;
@@ -253,6 +272,7 @@ section {
   border: 1px solid #fff;
   border-radius: 8px;
   backdrop-filter: blur(4px);
+  z-index: 1;
 }
 .schedule_form select {
   background-color: transparent;
@@ -413,14 +433,17 @@ option {
   max-width: 100%;
   object-fit: contain;
 }
+.prep_item[open],
 .prep_item:hover {
   border: 1px solid #fff;
   box-shadow: var(--bs);
 }
+.prep_item[open] .section_icon,
 .prep_item:hover .section_icon {
   border: 1px solid #fff;
   box-shadow: var(--bs-prep);
 }
+
 .prep_item:hover p:before {
   content: '';
   position: absolute;
@@ -428,6 +451,7 @@ option {
   width: 70%;
   box-shadow: var(--bs)
 }
+
 
 
 /* --------------------------------------------------------------  */
@@ -645,7 +669,8 @@ option {
   width: 13rem;
   height: 13rem;
   top: 26.5rem;
-  left: 38rem;
+  left: -6.4rem;
+  z-index: -1;
 }
 .triangle3{
   position: absolute;
@@ -723,7 +748,8 @@ option {
   .prep_section_img,
   .why_container_img,
   .emer_section_img,
-  .triangle2 {
+  .triangle2,
+  .triangle {
     display: none;
   }
   .benefits,
@@ -751,14 +777,67 @@ option {
   .form_container{
     display: flex;
     flex-flow: column;
+    margin-top: 2rem;
   }
   .schedule_form {
     display: flex;
     flex-flow: column;
     position: relative;
-    top: 0;
   }
   .emer_list {
     justify-content: center;
   }
 }
+
+@media (max-width: 768px) {
+  #xmark {
+    display: none;
+  }
+  .menu_icon {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    right: 5rem;
+    z-index: 1111;
+  }
+  #checkbox_menu:checked ~ #menu-btn .bars{
+    display: none;
+  }
+  #checkbox_menu:checked ~ #menu-btn .fa-xmark{
+    display: inline-block;
+  }
+  #checkbox_menu:checked ~ *.nav_menu{
+    display: flex;
+  }
+  .nav_menu {
+    flex-flow: column;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 40%;
+    background-color: var(--clr-btn);
+    gap: 0;
+    align-items: stretch;
+  }
+  .nav_menu li:last-child{
+    align-self: center;
+    padding: 2rem;
+  }
+  .nav_menu li a {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1px solid var(--bg-footer);
+  }
+  .nav_menu .btn {
+    padding: 1rem;
+  }
+  .features {
+    flex-flow: column;
+  }
+  .schedule_form {
+    width: 300px;
+  }
+  
+}
+
