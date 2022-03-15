@@ -39,31 +39,31 @@ h1 {
   line-height: 4rem;
   font-family: var(--ff-pri);
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin: 0;
   color: var(--clr-pri);
 }
 h2 {
   font-family: var(--ff-pri);
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin: 0;
   color: var(--clr-pri);
 }
 h3 {
   font-family: var(--ff-sec);
-  font-weight: 700;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.7rem;
   margin: 0;
   color: var(--clr-pri);
 }
 p {
-  max-width: 60ch;
+  max-width: 44ch;
   font-family: var(--ff-sec);
   margin: 0;
   color: var(--clr-sec);
-  line-height: 1.8rem;
-  font-size: 1.35rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 p select,
@@ -132,16 +132,13 @@ header {
   padding: 2rem 0;
   font-family: var(--ff-sec);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.6rem;
   border: 3px solid #fff;
   background-color: rgb(255, 255, 255, .93);
   backdrop-filter: blur(4px);
   z-index: 1111;
 }
-header img{
-  display: block;
-  width: 200px;
-}
+
 nav {
   display: flex;
   align-items: center;
@@ -151,7 +148,7 @@ nav {
   position: relative;
   font-family: var(--ff-pri);
   color: #2949c7;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 900;
   z-index: 1;
 }
@@ -174,14 +171,14 @@ nav {
   display: inline-block;
   text-decoration: none;
   padding: 1.2rem;
-  width: 10rem;
+  width: 11rem;
   height: 3.5rem;
   border-radius: 4px;
   border: none;
   background: var(--bg-btn-light);
   font-family: var(--ff-sec);
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1.45rem;
   cursor: pointer;
   color: var(--bg-btn);
   text-align: center;
@@ -212,7 +209,7 @@ nav {
 section {
   position: relative;
   max-width: 1600px;
-  height: 900px;
+  min-height: 900px;
   margin: auto;
 }
 
@@ -344,12 +341,20 @@ option {
 .why_container_img{
   flex: 0 1 48%;
 }
+.why_container_img img{
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
 .why_container_text {
   flex: 0 1 52%;
   display: flex;
   flex-flow: column;
   gap: 2rem;
   padding: 5rem 0 4rem 8rem;
+}
+.why_container_text p {
+  max-width: 45ch;
 }
 .benefits {
   display: flex;
@@ -361,14 +366,14 @@ option {
   flex: 0 1 23%;
   display: flex;
   flex-flow: column;
-  gap: 1rem;
+  gap: 1.5rem;
   padding: 2rem;
   border: 3px solid #fafaff;
   border-radius: 10px;
 }
 .benefit_item p {
   position: relative;
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4;
 }
 .benefit_item:hover {
@@ -487,7 +492,7 @@ option {
   display: flex;
   flex-flow: wrap;
   gap: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 .emer_item {
   flex: 0 1 45%;
@@ -538,22 +543,25 @@ option {
   padding: 3rem 8rem 1rem 8rem;
   overflow: hidden;
 }
-.footer_text,
-.footer_links{
-  flex: 0 1 50%;
+.footer_text {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  flex: 0 1 52%;
 }
 .footer_text p {
-  padding: 1rem 20rem 0 0;
+  max-width: 18ch;
   font-size: 1.2rem;
 }
-.footer_links {
+.footer_links { 
+  flex: 0 1 48%;
   display: flex;
   flex-flow: wrap;
-  justify-content: right;
+  justify-content: flex-end;
+  gap: 4rem;
 }
 .links_list {
-  padding-left:2rem ;
-  flex: 0 1 33%;
+  flex: 0 1 25%;
   display: flex;
   flex-flow: column;
   gap: 2rem;
@@ -706,7 +714,7 @@ option {
 
 /* --------------------------------------------------------*/
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   header {
     position: relative;
   }
@@ -735,7 +743,7 @@ option {
 }
 
 
-@media (max-width: 1152px) {
+@media (max-width: 900px) {
   header {
     position: relative;
   }
@@ -791,7 +799,7 @@ option {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   #xmark {
     display: none;
   }
